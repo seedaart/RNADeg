@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# local environments
+.venv/
+**/.venv/
+.ipynb_checkpoints/
+
+# datasets
+*.csv
+*.tsv
+*.parquet
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.txt.gz
+*.txt.zip
+**/data/
+**/*_data.tar.gz
+**/*_data.zip
