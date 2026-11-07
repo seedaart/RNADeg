@@ -1,0 +1,16 @@
+{
+  "public": {
+    "target": "deg_Mg_pH10",
+    "constructs": 629,
+    "positions": 42772,
+    "rmse": 0.3739568750249641,
+    "test_filter": null
+  },
+  "private": {
+    "target": "deg_Mg_pH10",
+    "constructs": 3005,
+    "positions": 273455,
+    "rmse": 0.5708177609263672,
+    "test_filter": null
+  }
+}
