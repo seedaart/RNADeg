@@ -1,0 +1,22 @@
+name: RNAdegformer
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - torchaudio
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - pip
+  - pip:
+      - albumentations
+      - iterative-stratification
+      - kaggle
+      - opencv-python
