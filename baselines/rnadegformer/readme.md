@@ -1,26 +1,18 @@
-# Code to reproduce results for the openvaccine dataset
+# RNADegformer Implementation
 
-First download all necessary data ```bash download_data.sh```, which does the following:
+This code is adapted from https://github.com/Shujun-He/RNAdegformer/tree/main 
 
-Download base dataset: https://www.kaggle.com/c/stanford-covid-vaccine/data
+## Download Datasets 
+- https://www.kaggle.com/c/stanford-covid-vaccine/data
+- https://www.kaggle.com/shujun717/openvaccine-12x-dataset
 
-Download 12x augmented dataset: https://www.kaggle.com/shujun717/openvaccine-12x-dataset
+## Run Scripts
+- Pretrain: ```./pretrain.sh```
+- Train: ```./run.sh```
+- Extract best weights: ```python get_best_weights.py```
+- Predictions: ```./predict.sh```
 
-Unzip them to the same directory, so that the directory contains
-
-├── train.json                   
-├── test.json                    
-├── sample_submission.csv                     
-├── bpps                    
-├── post_deadline_files                   
-└── openvaccine_12x_dataset
-
-Here I include the hypeparameters that give the best single model.
-
-1. pretrain with all available sequences: ```./pretrain.sh```
-
-2. train on targets: ```./run.sh```
-
-3. ```python get_best_weights.py``` to extract best weights for each fold based on validation performance
-
-4. to make predictions and generate a csv file (submission.csv) for submission on kaggle: ```./predict.sh``` then you can make a submission at https://www.kaggle.com/c/stanford-covid-vaccine/submissions
+## Checkpoints and Prediction files:
+- pretrain: https://drive.google.com/drive/folders/11B2c8E15r1ivqG76nGn3GG5e55q63FbL?usp=sharing
+- training weights: https://drive.google.com/drive/folders/1pE_3HtgFAuA6N4qKZShxt44reXSXGTOg?usp=sharing
+- predictions: https://drive.google.com/drive/folders/18IVPvMq1rTJHC57ZRx4PwlCQvK9JgIyR?usp=sharing
